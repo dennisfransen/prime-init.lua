@@ -48,4 +48,11 @@ return require('packer').startup(function(use)
     use("folke/zen-mode.nvim")
     use("laytan/cloak.nvim")
     use("numToStr/Comment.nvim")
+    use {
+        "nvim-lualine/lualine.nvim",
+        requires = { "nvim-tree/nvim-web-devicons", opt = true }
+    }
+    use ("m4xshen/autoclose.nvim")
+    use("kylechui/nvim-surround")
+
 end)
